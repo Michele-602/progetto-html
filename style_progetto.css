@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  background-image: url('img/sfondo.1jpg.png');
+  background-image: url('img/sfondo2.jpg');
   background-size: cover;
   background-position: center;
   color:#ffffff;
@@ -23,7 +23,7 @@ header {
 
 
 nav {
-  background-color: #BDA786
+  background-color: #aa977a
 }
 
 nav ul {
