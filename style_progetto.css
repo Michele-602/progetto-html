@@ -1,65 +1,263 @@
 body {
-    font-family:'Times New Roman', Times, serif;
-    font-size: 17px;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f5f5f5;
-    color: #333;
-  }
-  
-  header {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 32px 16px;
-  }
-  
-  nav {
-    background-color: #34495e;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-  }
-  
-  nav ul li {
-    margin: 0 16px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 1rem;
-    display: block;
-  }
-  nav ul li h2{
-    color: white;
-    text-decoration: none;
-    padding: 16px;
-  }
-  
-  main {
-    padding: 32px;
-  }
-  
-  section {
-    margin-bottom: 32px;
-  }
-  
-  footer {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 16px;
-  }
-  div.expl{
-    position:absolute;
-    top:430px;
-    left: 240px;
-    font-size: 18px;
-    line-height: 1.5;
-  }
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  background-image: url('img/sfondo2.jpg');
+  background-size: cover;
+  background-position:center;
+  color:#ffffff;
+  text-align: center;
+  padding: 40px 20px;
+  height: 400px;
+}
+
+
+nav {
+  background-color: #aa977a
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 16px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 16px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #f0f7f5;
+  color: black;
+  transition: 0.3s;
+  border:solid 1px #aa977a;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+
+#what-is-coltan {
+  display: flex;
+  gap: 20px;
+  background-color: #ecf0f1;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.coltan-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.coltan-img {
+  width: 170px;
+  height: 330px;
+  border-radius: 8px;
+}
+
+.coltan-text {
+  max-width: 83%;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #34495e;
+  margin-left: 20px;
+}
+
+section {
+  background-color: #ecf0f1;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 24px;
+  color:#34495e;
+}
+
+section p {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #34495e;
+}
+
+section a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+footer {
+  background-color: #BDA786;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.miniere-img{
+  width: 530px;
+  height: 361px;
+  border-radius: 8px;
+}
+.conteiner-miniere{
+  margin-top: 30px;
+}
+.miniere-text {
+  max-width: 85%;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #34495e;
+  margin-left: 20px;
+}
+footer ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+footer ul li{
+  margin: 0 16px;
+}
+footer ul li a{
+  color: white;
+  text-decoration: none;
+  padding: 16px;
+  display: block;
+  text-align: center;
+}
+
+
+/*Paragrafo introduttivo*/
+.intro {
+  max-width: 95%;
+  margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #34495e;
+}
+
+
+/*Mappa + testo + elenco*/
+.riga-mappa-testo {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+
+/* Mappa più piccola */
+.mappa-container.small {
+  width: 480px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+
+.mappa-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.mappa-container button {
+  position: absolute;
+  padding: 6px 10px;
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #555;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.mappa-descrizione {
+  flex-grow: 1;
+  font-size: 17px;
+  color: #34495e;
+}
+
+
+.mappa-descrizione ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+
+/* Riga finale: sotto la mappa */
+.riga-paragrafo-tabella {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+
+.sotto-mappa {
+  flex: 1;
+  font-size: 17px;
+  color: #34495e;
+}
+
+
+/* Tabella città */
+.tabella-container {
+  flex: 1;
+  max-width: 500px;
+}
+
+
+.city-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.city-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+
+.city-table th {
+  background-color: #aa977a;
+  color: white;
+}
+
+
+/* Info mappa */
+#info {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  font-style: italic;
+}

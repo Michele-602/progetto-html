@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+  <title>general situation in Congo</title>
+  <link rel="stylesheet" href="style_progetto.css">
+</head>
+<body>
+
+
+  <header>
+    <h1>Shadows of Coltan: The Price of Technology</h1>
+    <p>Between technology, conflicts, and human rights</p>
+  </header>
+
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="#what is coltan">What is Coltan?</a></li>
+      <li><a href="congo.html">Coltan in Democratic Republic of Congo</a></li>
+      <li><a href="impact.html">Impact</a></li>
+      <li><a href="Solutions.html">Solutions</a></li>
+    </ul>
+  </nav>
+
+
+  <main>
+    <section id="what-is-coltan">
+      <div class="content">
+        <!-- Titolo e introduzione -->
+  <h2>Zone di Estrazione del Coltan</h2>
+  <p class="intro">
+    La maggior parte del coltan viene estratta in regioni come Nord Kivu, Sud Kivu e Ituri. Queste aree, spesso instabili e controllate da gruppi armati, sono fondamentali per il mercato globale della tecnologia. L'accesso a queste miniere avviene in condizioni precarie e le popolazioni locali ne subiscono le conseguenze sociali e ambientali.
+  </p>
+
+
+  <!-- Mappa + descrizione a lato -->
+  <div class="riga-mappa-testo">
+    <div class="mappa-container small">
+      <img src="img/img_congo.jpg" alt="congo immagine">
+      <button style="top: 240px; left: 260px;" onclick="showInfo('Walikale - Ricco di coltan')">Walikale</button>
+      <button style="top: 310px; left: 410px;" onclick="showInfo('Shabunda - Miniere artigianali')">Shabunda</button>
+      <button style="top: 270px; left: 300px;" onclick="showInfo('Bisie - Estrazione su larga scala')">Bisie</button>
+      <button style="top: 410px; left: 210px;" onclick="showInfo('Fizi - Zona strategica')">Fizi</button>
+    </div>
+
+
+    <div class="mappa-descrizione">
+      <p>
+        Le miniere si trovano in aree ricche di risorse ma molto instabili. La gestione di queste risorse avviene spesso senza regole, portando a gravi violazioni dei diritti umani.
+      </p>
+      <ul>
+        <li>Condizioni di lavoro disumane</li>
+        <li>Sfruttamento minorile</li>
+        <li>Finanziamento di gruppi armati</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- Paragrafo + Tabella -->
+  <div class="riga-paragrafo-tabella">
+    <p class="sotto-mappa">
+      Comprendere le caratteristiche delle principali aree di estrazione è fondamentale per intervenire efficacemente. Le città elencate svolgono ruoli strategici nel traffico del coltan.
+    </p>
+
+
+    <div class="tabella-container">
+      <table class="city-table">
+        <tr>
+          <th>Città</th>
+          <th>Caratteristica principale</th>
+        </tr>
+        <tr>
+          <td>Walikale</td>
+          <td>Ricco di coltan</td>
+        </tr>
+        <tr>
+          <td>Shabunda</td>
+          <td>Miniere artigianali</td>
+        </tr>
+        <tr>
+          <td>Bisie</td>
+          <td>Estrazione su larga scala</td>
+        </tr>
+        <tr>
+          <td>Fizi</td>
+          <td>Zona strategica</td>
+        </tr>
+      </table>
+      <div id="info"></div>
+    </div>
+  </div>
+        </div>
+     
+        <script>
+          function showInfo(text) {
+            document.getElementById('info').innerText = text;
+          }
+        </script>
+     
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>© 2025 | Information taken from UN, Amnesty, and local NGO reports.</p>
+  </footer>
+
+
+</body>
+</html>
