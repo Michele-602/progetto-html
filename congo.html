@@ -5,112 +5,106 @@
 </head>
 <body>
 
-
   <header>
     <h1>Shadows of Coltan: The Price of Technology</h1>
     <p>Between technology, conflicts, and human rights</p>
   </header>
 
-
   <nav>
     <ul>
       <li><a href="home.html">Home</a></li>
-      <li><a href="#what is coltan">What is Coltan?</a></li>
-      <li><a href="congo.html">Coltan in Democratic Republic of Congo</a></li>
+      <li><a href="what is coltan.html">What is Coltan?</a></li>
+      <li><a href="#congo">Coltan in Democratic Republic of Congo</a></li>
       <li><a href="impact.html">Impact</a></li>
       <li><a href="Solutions.html">Solutions</a></li>
     </ul>
   </nav>
 
-
   <main>
-    <section id="what-is-coltan">
+    <section id="congo">
       <div class="content">
-        <!-- Titolo e introduzione -->
-  <h2>Zone di Estrazione del Coltan</h2>
-  <p class="intro">
-    La maggior parte del coltan viene estratta in regioni come Nord Kivu, Sud Kivu e Ituri. Queste aree, spesso instabili e controllate da gruppi armati, sono fondamentali per il mercato globale della tecnologia. L'accesso a queste miniere avviene in condizioni precarie e le popolazioni locali ne subiscono le conseguenze sociali e ambientali.
-  </p>
+        <h2>Coltan Extraction Areas</h2>
+        <p class="intro">
+          Most coltan is mined in regions such as North Kivu, South Kivu and Ituri. These areas, often unstable and controlled by armed groups, are critical to the global technology market. Access to these mines takes place in precarious conditions and the local populations suffer the social and environmental consequences.
+        </p>
 
+        <div class="riga-mappa-testo">
+          <div class="mappa-container small">
+            <img src="img/img_congo.jpg" alt="congo immagine">
+            <!-- Label collegati ai radio button -->
+            <label for="walikale" style="position:absolute; top:240px; left:260px;">Walikale</label>
+            <label for="shabunda" style="position:absolute; top:310px; left:410px;">Shabunda</label>
+            <label for="bisie" style="position:absolute; top:270px; left:300px;">Bisie</label>
+            <label for="fizi" style="position:absolute; top:410px; left:210px;">Fizi</label>
+          </div>
 
-  <!-- Mappa + descrizione a lato -->
-  <div class="riga-mappa-testo">
-    <div class="mappa-container small">
-      <img src="img/img_congo.jpg" alt="congo immagine">
-      <button style="top: 240px; left: 260px;" onclick="showInfo('Walikale - Ricco di coltan')">Walikale</button>
-      <button style="top: 310px; left: 410px;" onclick="showInfo('Shabunda - Miniere artigianali')">Shabunda</button>
-      <button style="top: 270px; left: 300px;" onclick="showInfo('Bisie - Estrazione su larga scala')">Bisie</button>
-      <button style="top: 410px; left: 210px;" onclick="showInfo('Fizi - Zona strategica')">Fizi</button>
-    </div>
+          <div class="mappa-descrizione">
+            <p>
+              Mines are located in resource-rich but very unstable areas. <br>
+              The management of these resources often takes place without rules, leading to serious human rights violations.
+            </p>
+            <ul>
+              <li>Inhumane working conditions</li>
+              <li>Child exploitation</li>
+              <li>Financing of armed groups</li>
+            </ul>
+            <div class="city-images">
+              <input type="radio" name="city" id="walikale">
+              <input type="radio" name="city" id="shabunda">
+              <input type="radio" name="city" id="bisie">
+              <input type="radio" name="city" id="fizi">
 
-
-    <div class="mappa-descrizione">
-      <p>
-        Le miniere si trovano in aree ricche di risorse ma molto instabili. La gestione di queste risorse avviene spesso senza regole, portando a gravi violazioni dei diritti umani.
-      </p>
-      <ul>
-        <li>Condizioni di lavoro disumane</li>
-        <li>Sfruttamento minorile</li>
-        <li>Finanziamento di gruppi armati</li>
-      </ul>
-    </div>
-  </div>
-
-
-  <!-- Paragrafo + Tabella -->
-  <div class="riga-paragrafo-tabella">
-    <p class="sotto-mappa">
-      Comprendere le caratteristiche delle principali aree di estrazione è fondamentale per intervenire efficacemente. Le città elencate svolgono ruoli strategici nel traffico del coltan.
-    </p>
-
-
-    <div class="tabella-container">
-      <table class="city-table">
-        <tr>
-          <th>Città</th>
-          <th>Caratteristica principale</th>
-        </tr>
-        <tr>
-          <td>Walikale</td>
-          <td>Ricco di coltan</td>
-        </tr>
-        <tr>
-          <td>Shabunda</td>
-          <td>Miniere artigianali</td>
-        </tr>
-        <tr>
-          <td>Bisie</td>
-          <td>Estrazione su larga scala</td>
-        </tr>
-        <tr>
-          <td>Fizi</td>
-          <td>Zona strategica</td>
-        </tr>
-      </table>
-      <div id="info"></div>
-    </div>
-  </div>
+              <img src="img/walikale.jpg" class="img-walikale" alt="Walikale">
+              <img src="img/shabunda.jpg" class="img-shabunda" alt="Shabunda">
+              <img src="img/bisie.jpg" class="img-bisie" alt="Bisie">
+              <img src="img/fizi.jpg" class="img-fizi" alt="Fizi">
+            </div>
+          </div>
         </div>
-     
-        <script>
-          function showInfo(text) {
-            document.getElementById('info').innerText = text;
-          }
-        </script>
-     
-  <main>
-    <section id="what-is-coltan">
-      <div class="content">
 
+        <div class="riga-paragrafo-tabella">
+          <p class="sotto-mappa">
+            Understanding the characteristics of the main extraction areas is essential to intervene effectively. The listed cities play strategic roles in coltan trafficking.
+          </p>
+
+          <div class="tabella-container">
+            <table class="city-table">
+              <tr>
+                <th>City</th>
+                <th>Main Feature</th>
+              </tr>
+              <tr>
+                <td>Walikale</td>
+                <td>Rich in coltan</td>
+              </tr>
+              <tr>
+                <td>Shabunda</td>
+                <td>Artisanal mines</td>
+              </tr>
+              <tr>
+                <td>Bisie</td>
+                <td>Large-scale mining</td>
+              </tr>
+              <tr>
+                <td>Fizi</td>
+                <td>Strategic area</td>
+              </tr>
+            </table>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-
-  <footer>
-    <p>© 2025 | Information taken from UN, Amnesty, and local NGO reports.</p>
+<footer>
+    <p>© 2025 | Information based on reports from the UN, Amnesty International, NGOs,Wikipedia.</p>
+    <h4>Sitography</h4>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Columbite-tantalite">Wikipedia</a></li>
+      <li><a href="https://www.amnestyusa.org/reports/this-is-what-we-die-for-human-rights-abuses-in-the-democratic-republic-of-the-congo-power-the-global-trade-in-cobalt/">Amnesty International</a></li>
+      <li><a href="https://press.un.org/en/2025/sc15981.doc.htm">UN</a></li>
+    </ul>
   </footer>
-
 
 </body>
 </html>

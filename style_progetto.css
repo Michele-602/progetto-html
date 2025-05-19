@@ -1,3 +1,4 @@
+/*caratteristiche generali della pagina*/
 body {
   font-family: 'Times New Roman', Times, serif;
   font-size: 17px;
@@ -9,22 +10,21 @@ body {
   width: 100%;
   height: 100%;
 }
-
+/*sfondo del titolo con immagine*/
 header {
   background-image: url('img/sfondo2.jpg');
   background-size: cover;
-  background-position:center;
-  color:#ffffff;
+  background-position: center;
+  color: #ffffff;
   text-align: center;
   padding: 40px 20px;
   height: 400px;
 }
-
-
+/*contenitore lista orizzontale*/
 nav {
-  background-color: #aa977a
+  background-color: #aa977a;
 }
-
+/*contenitore lista orizzontale*/
 nav ul {
   list-style: none;
   display: flex;
@@ -32,30 +32,29 @@ nav ul {
   padding: 0;
   margin: 0;
 }
-
+/*contenitore lista orizzontale*/
 nav ul li {
   margin: 0 16px;
 }
-
+/*contenitore lista orizzontale con link*/
 nav ul li a {
   color: white;
   text-decoration: none;
   padding: 16px;
   display: block;
 }
-
+/*contenitore lista orizzontale caratteristche pulsante quando schiacciato*/
 nav ul li a:hover {
   background-color: #f0f7f5;
   color: black;
   transition: 0.3s;
-  border:solid 1px #aa977a;
+  border: solid 1px #aa977a;
 }
-
+/*contenitore grande della pagina*/
 main {
   padding: 40px 20px;
 }
-
-
+/*section what is coltan*/
 #what-is-coltan {
   display: flex;
   gap: 20px;
@@ -65,20 +64,20 @@ main {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   align-items: center;
 }
-
+/*contenitore pagina what is coltan,con dentro img*/
 .coltan-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
-
+/* img minerale*/
 .coltan-img {
   width: 170px;
   height: 330px;
   border-radius: 8px;
 }
-
+/*descrizione minerale*/
 .coltan-text {
   max-width: 83%;
   font-size: 17px;
@@ -86,7 +85,7 @@ main {
   color: #34495e;
   margin-left: 20px;
 }
-
+/* sezione home*/
 section {
   background-color: #ecf0f1;
   padding: 30px;
@@ -94,40 +93,64 @@ section {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 40px;
 }
-
+/*titoli sezione home*/
 section h2 {
   font-size: 24px;
-  color:#34495e;
+  color: #34495e;
 }
-
+/*paragrafo sezione home*/
 section p {
   font-size: 17px;
   line-height: 1.6;
   color: #34495e;
 }
-
+/*link sezione home*/
 section a {
   color: #2980b9;
   text-decoration: none;
 }
-
+/* sezione home,quando vai col mouse sopra il link diventa sottolineato*/
 section a:hover {
   text-decoration: underline;
 }
+/*descrizione in basso alla pagina della fonte delle informazioni*/
 footer {
   background-color: #BDA786;
   color: white;
   text-align: center;
   padding: 20px;
 }
-.miniere-img{
+/*descrizione in basso alla pagina della fonte delle informazioni*/
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+/*descrizione in basso alla pagina della fonte delle informazioni*/
+footer ul li {
+  margin: 0 16px;
+}
+/*descrizione in basso alla pagina della fonte delle informazioni*/
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 16px;
+  display: block;
+  text-align: center;
+}
+/*pagina impact,img miniere*/
+.miniere-img {
   width: 530px;
   height: 361px;
   border-radius: 8px;
 }
-.conteiner-miniere{
+/*contenitore testo miniere*/
+.conteiner-miniere {
   margin-top: 30px;
 }
+/*contenitore testo miniere*/
 .miniere-text {
   max-width: 85%;
   font-size: 17px;
@@ -135,27 +158,10 @@ footer {
   color: #34495e;
   margin-left: 20px;
 }
-footer ul{
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-}
-footer ul li{
-  margin: 0 16px;
-}
-footer ul li a{
-  color: white;
-  text-decoration: none;
-  padding: 16px;
-  display: block;
-  text-align: center;
-}
 
-<<<<<<< HEAD
 
-/*Paragrafo introduttivo*/
+
+/*Paragrafo introduttivo pagina congo*/
 .intro {
   max-width: 95%;
   margin-bottom: 30px;
@@ -164,8 +170,7 @@ footer ul li a{
   color: #34495e;
 }
 
-
-/*Mappa + testo + elenco*/
+/*Mappa + testo + elenco pagina congo*/
 .riga-mappa-testo {
   display: flex;
   justify-content: space-between;
@@ -174,22 +179,19 @@ footer ul li a{
   flex-wrap: wrap;
 }
 
-
-/* Mappa più piccola */
+/* Mappa più piccola pagina congo */
 .mappa-container.small {
   width: 480px;
   position: relative;
   flex-shrink: 0;
 }
-
-
+/*contenitore immagine*/
 .mappa-container img {
   width: 100%;
   height: auto;
   display: block;
 }
-
-
+/*bottoni sull'immagine congo*/
 .mappa-container button {
   position: absolute;
   padding: 6px 10px;
@@ -199,20 +201,16 @@ footer ul li a{
   cursor: pointer;
   border-radius: 5px;
 }
-
-
+/*posizione dell'elenco di fianco alla mappa*/
 .mappa-descrizione {
-  flex-grow: 1;
-  font-size: 17px;
-  color: #34495e;
+  flex: 1 1 0;
+  min-width: 300px;
 }
-
-
+/*posizione dell'elenco di fianco alla mappa*/
 .mappa-descrizione ul {
   margin-top: 10px;
   padding-left: 20px;
 }
-
 
 /* Riga finale: sotto la mappa */
 .riga-paragrafo-tabella {
@@ -221,46 +219,88 @@ footer ul li a{
   gap: 30px;
   flex-wrap: wrap;
 }
-
-
+/*posizione del testo sotto la mappa*/
 .sotto-mappa {
   flex: 1;
   font-size: 17px;
   color: #34495e;
 }
 
-
 /* Tabella città */
 .tabella-container {
   flex: 1;
   max-width: 500px;
 }
-
-
+/* Tabella città */
 .city-table {
   width: 100%;
   border-collapse: collapse;
 }
-
+/* Tabella città con elenco caratteristiche*/
 .city-table td {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: left;
 }
-
-
+/* Tabella città con elenco caratteristiche*/
 .city-table th {
   background-color: #aa977a;
   color: white;
 }
 
-
 /* Info mappa */
 #info {
   text-align: center;
   margin-top: 20px;
-  font-size: 16px;
+  font-size: 26px;
   font-style: italic;
 }
-=======
->>>>>>> c6f8532cc292e358713a11fc1a4030767c0cc343
+/* input nascosti per selezionare la città*/
+.city-images input[type="radio"] {
+  display: none;
+}
+/*quando metto il mouse sopra il nome delle citta,cambia da puntatore a dito*/
+.city-images label {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #ddd;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+/*immagini che compaiono quando clicco sul bottone*/
+.city-images img {
+  display: none;
+  max-width: 300px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+/*selezione delle immagini in base all'input preso*/
+#walikale:checked ~ .img-walikale,
+#shabunda:checked ~ .img-shabunda,
+#bisie:checked ~ .img-bisie,
+#fizi:checked ~ .img-fizi {
+  display: block;
+}
+/*posizione delle immagini quando compaiono*/
+.city-images {
+  margin-top: 20px;
+}
+/*div che contiene la lista nella pag solutions*/
+.box {
+  display: flex;
+  align-items: flex-start; 
+  gap: 40px; 
+}
+/*caratteristiche lista*/
+.lista {
+  list-style-type:square;
+  padding-left: 20px;
+  margin: 0;
+}
+/*img pagian solution sulla destra*/
+.immagine {
+  width: 400px;
+  height: auto;
+  border-radius: 8px; /* opzionale per bordi arrotondati */
+}
